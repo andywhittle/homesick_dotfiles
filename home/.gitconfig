@@ -1,0 +1,12 @@
+[user]
+	name = Simon Mellor
+	email = sfusion@gmail.com
+[core]
+	editor = vim
+[alias]
+	st = status
+	co = checkout
+[color]
+	ui = true
+[push]
+	default = tracking
