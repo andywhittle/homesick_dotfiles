@@ -105,3 +105,6 @@ set complete=.,t
 " case only matters with mixed case expressions
 set ignorecase
 set smartcase
+
+" trim whitespace
+autocmd FileType c,cpp,java,php,ruby autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
