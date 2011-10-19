@@ -17,4 +17,7 @@ alias gco='git checkout'
 alias gb='git branch'
 alias gs='git status'
 
+alias g='cd ~/code/git'
+alias s='cd ~/code/svn'
+
 alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'

@@ -16,6 +16,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'tpope/vim-haml'
+Bundle 'godlygeek/tabular'
 " Bundle 'Lokaltog/vim-easymotion'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " vim-scripts repos
@@ -113,5 +114,5 @@ set smartcase
 autocmd FileType c,cpp,java,php,ruby,coffee,sass autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 
 " color past 80
-set cc=80
-hi ColorColumn ctermbg=red guibg=red
+set cc=81
+hi ColorColumn ctermbg=darkgrey guibg=darkgrey
