@@ -1,5 +1,7 @@
 autoload -U colors && colors
 
+export TERM=xterm-256color
+
 if [[ -n $SSH_CONNECTION ]]; then
   export PS1='%m:%3~$(git_info_for_prompt)%# '
 else
@@ -7,9 +9,11 @@ else
 fi
 
 PS1="%{$bg[green]$fg[white]%}\$(~/.rvm/bin/rvm-prompt)%{$reset_color%} $PS1"
+RPROMPT="%t"
 
 export EDITOR='vim'
 # export PATH="~/bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/local/mongodb/bin:$PATH"
+export PATH="$HOME/.fatsoma:$PATH"
 # export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
 fpath=(~/.zsh/functions $fpath)

@@ -17,11 +17,13 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'tpope/vim-haml'
 Bundle 'godlygeek/tabular'
+Bundle 'othree/html5.vim'
 " Bundle 'Lokaltog/vim-easymotion'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
+Bundle 'bufexplorer.zip'
 " Bundle 'rails.vim'
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
@@ -115,4 +117,4 @@ autocmd FileType c,cpp,java,php,ruby,coffee,sass autocmd BufWritePre <buffer> :c
 
 " color past 80
 set cc=81
-hi ColorColumn ctermbg=darkgrey guibg=darkgrey
+hi ColorColumn guibg=#073642
