@@ -12,7 +12,7 @@ PS1="%{$bg[green]$fg[white]%}\$(~/.rvm/bin/rvm-prompt)%{$reset_color%} $PS1"
 RPROMPT="%t"
 
 export EDITOR='vim'
-# export PATH="~/bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/local/mongodb/bin:$PATH"
+export PATH="~/bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/local/mongodb/bin:$PATH"
 export PATH="$HOME/.fatsoma:$PATH"
 # export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 

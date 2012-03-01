@@ -78,6 +78,9 @@ let mapleader = ","
 " Hide search highlighting
 map <Leader>h :set invhls <CR>
 
+" FufFile binding
+map <Leader>o :FufFile <CR>
+
 " Move lines up and down
 map <C-J> :m +1 <CR>
 map <C-K> :m -2 <CR>
@@ -118,3 +121,10 @@ autocmd FileType c,cpp,java,php,ruby,coffee,sass autocmd BufWritePre <buffer> :c
 " color past 80
 set cc=81
 hi ColorColumn guibg=#073642
+
+" swap files into tmp
+if has("win32") || has("win64")
+  set directory=$TMP
+else
+  set directory=/tmp
+end
