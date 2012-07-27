@@ -12,3 +12,5 @@
 	default = tracking
 [github]
 	user = simonmellor
+[credential]
+	helper = osxkeychain
