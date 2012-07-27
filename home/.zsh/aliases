@@ -24,3 +24,5 @@ alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resourc
 
 alias tmux='TERM=xterm-256color tmux'
 alias ts='tmuxinator start'
+
+alias be='bundle exec'

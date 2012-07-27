@@ -16,6 +16,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'tpope/vim-haml'
+Bundle 'vim-ruby/vim-ruby'
 Bundle 'godlygeek/tabular'
 Bundle 'othree/html5.vim'
 " Bundle 'Lokaltog/vim-easymotion'
@@ -49,6 +50,11 @@ filetype plugin indent on     " required!
 " Solarized colors
 syntax enable
 set background=dark
+let g:solarized_termcolors=16
+"let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+let g:solarized_degrade=1
+
 colorscheme solarized
 
 " allow backspacing over everything in insert mode
@@ -128,3 +134,15 @@ if has("win32") || has("win64")
 else
   set directory=/tmp
 end
+
+" offset scrolling by 3 lines
+set scrolloff=3
+
+" set thor filetype to ruby
+au BufNewFile,BufRead *.thor set filetype=ruby
+
+" set gemfile filetype to ruby
+au BufNewFile,BufRead Gemfile set filetype=ruby
+
+" set guard filetype to ruby
+au BufNewFile,BufRead Guardfile set filetype=ruby
