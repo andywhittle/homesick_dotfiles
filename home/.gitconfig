@@ -3,6 +3,8 @@
 	email = sfusion@gmail.com
 [core]
 	editor = vim
+	autocrlf = false
+	excludesfile = /Users/simonmellor/.gitignore
 [alias]
 	st = status
 	co = checkout

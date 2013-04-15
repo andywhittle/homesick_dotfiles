@@ -107,6 +107,9 @@ if executable("ack")
   set grepprg=ack\ -H\ --nogroup\ --nocolor\ --ignore-dir=tmp\ --ignore-dir=coverage
 endif
 
+" Spell
+setglobal spell spelllang=en_gb
+
 " Numbers
 set number
 set numberwidth=5
