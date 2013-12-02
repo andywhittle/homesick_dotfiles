@@ -1,5 +1,8 @@
 # cd
 alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
 
 # ls
 alias ls="ls -F"
@@ -17,11 +20,8 @@ alias gco='git checkout'
 alias gb='git branch'
 alias gs='git status'
 
-alias f='cd ~/code/fatsoma'
+alias f='cd ~/src/fatsoma'
 
 alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 
 alias tmux='TERM=xterm-256color tmux'
-alias ts='tmuxinator start'
-
-alias be='bundle exec'

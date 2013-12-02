@@ -9,29 +9,25 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
-"
-" original repos on github
+Bundle 'Align'
+" Bundle 'FuzzyFinder'
+Bundle 'Keithbsmiley/rspec.vim'
+Bundle 'L9'
+Bundle 'Shutnik/jshint2.vim'
+Bundle 'bufexplorer.zip'
 Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'dsawardekar/ember.vim'
+Bundle 'elzr/vim-json'
 Bundle 'godlygeek/tabular'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'kien/ctrlp.vim'
+Bundle 'mustache/vim-mode'
 Bundle 'othree/html5.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-rails'
 Bundle 'vim-ruby/vim-ruby'
-Bundle 'elzr/vim-json'
-Bundle 'Align'
-" Bundle 'Lokaltog/vim-easymotion'
-" Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-" vim-scripts repos
-Bundle 'L9'
-Bundle 'FuzzyFinder'
-Bundle 'bufexplorer.zip'
-" Bundle 'rails.vim'
-" non github repos
-" Bundle 'git://git.wincent.com/command-t.git'
-" ...
 
 filetype plugin indent on     " required! 
 "
@@ -152,3 +148,5 @@ au BufNewFile,BufRead Gemfile set filetype=ruby
 
 " set guard filetype to ruby
 au BufNewFile,BufRead Guardfile set filetype=ruby
+
+set shell=/opt/boxen/homebrew/bin/zsh

@@ -4,10 +4,20 @@
 [core]
 	editor = vim
 	autocrlf = false
-	excludesfile = /Users/simonmellor/.gitignore
+	excludesfile = ~/.gitignore
 [alias]
-	st = status
-	co = checkout
+  cp = cherry-pick
+  st = status -s
+  cl = clone
+  ci = commit
+  co = checkout
+  br = branch
+  diff = diff --word-diff
+  dc = diff --cached
+
+  dm = ! git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d
+  sed = ! git grep -z --full-name -l '.' | xargs -0 sed -i -e
+  la = ! git config -l | grep alias | cut -c 7-
 [color]
 	ui = true
 [push]
@@ -15,4 +25,6 @@
 [github]
 	user = simonmellor
 [credential]
-	helper = osxkeychain
+	helper = /opt/boxen/bin/boxen-git-credential
+[hub]
+protocol = https
