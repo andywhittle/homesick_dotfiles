@@ -1,9 +1,0 @@
-set certificate_file=~/.mutt/certificates
-set move = no
-source ~/.mutt/colors/mutt-colors-solarized-dark-16.muttrc
-folder-hook 'sfusion@gmail.com' 'source ~/.mutt/accounts/sfusion@gmail.com'
-folder-hook 'simon.mellor@fatsoma.com' 'source ~/.mutt/accounts/simon.mellor@fatsoma.com'
-source ~/.mutt/accounts/sfusion@gmail.com
-
-macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/accounts/sfusion@gmail.com<enter><change-folder>!<enter>'
-macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/accounts/simon.mellor@fatsoma.com<enter><change-folder>!<enter>'

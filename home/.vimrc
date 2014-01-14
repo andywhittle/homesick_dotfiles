@@ -10,7 +10,6 @@ Bundle 'gmarik/vundle'
 
 " My Bundles here:
 Bundle 'Align'
-" Bundle 'FuzzyFinder'
 Bundle 'Keithbsmiley/rspec.vim'
 Bundle 'L9'
 Bundle 'Shutnik/jshint2.vim'
@@ -24,6 +23,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'mustache/vim-mode'
 Bundle 'othree/html5.vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-rails'
@@ -83,9 +83,6 @@ let mapleader = ","
 " Hide search highlighting
 map <Leader>h :set invhls <CR>
 
-" FufFile binding
-map <Leader>o :FufFile <CR>
-
 " Move lines up and down
 map <C-J> :m +1 <CR>
 map <C-K> :m -2 <CR>
@@ -95,8 +92,6 @@ nmap <F1> <Esc>
 
 " Maps autocomplete to tab
 imap <Tab> <C-N>
-
-imap <C-L> <Space>=><Space>
 
 " Display extra whitespace
 " set list listchars=tab:禄路,trail:路
