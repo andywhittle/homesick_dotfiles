@@ -19,3 +19,4 @@ ehthumbs.db
 nohup.out
 tDS_Store
 tags
+bin/*

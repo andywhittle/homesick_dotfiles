@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
@@ -29,7 +29,7 @@ Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-rails'
 Bundle 'vim-ruby/vim-ruby'
 
-filetype plugin indent on     " required! 
+filetype plugin indent on     " required!
 "
 " Brief help
 "
@@ -45,6 +45,7 @@ filetype plugin indent on     " required!
 " see :h vundle for more details
 " or wiki for FAQ
 " Note: comments after Bundle command are not allowed..
+
 
 " Solarized colors
 syntax enable
@@ -73,6 +74,9 @@ set nowrap
 set tabstop=2
 set shiftwidth=2
 set expandtab
+
+autocmd FileType * set tabstop=2|set shiftwidth=2|set expandtab
+autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
 
 " Always display the status line
 set laststatus=2
@@ -119,7 +123,7 @@ set ignorecase
 set smartcase
 
 " trim whitespace
-autocmd FileType c,cpp,java,php,ruby,coffee,sass autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
+autocmd FileType c,cpp,java,javascript,php,ruby,coffee,sass autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 
 " color past 80
 set cc=81
@@ -145,3 +149,17 @@ au BufNewFile,BufRead Gemfile set filetype=ruby
 au BufNewFile,BufRead Guardfile set filetype=ruby
 
 set shell=/opt/boxen/homebrew/bin/zsh
+
+let g:rails_projections = {
+\    "lib/client/*_.rb": {
+\      "command": "client_model",
+\      "affinity": "model",
+\      "test": "spec/lib/client/%s_spec.rb"
+\    }
+\  }
+
+let g:syntastic_aggregate_errors = 1
+
+" ctags optimization
+set autochdir
+set tags=tags;

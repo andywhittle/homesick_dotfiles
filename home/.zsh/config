@@ -17,10 +17,7 @@ export PATH="~/bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/l
 export PATH="$HOME/.fatsoma:$PATH"
 export PATH="$HOME/.aws/eb/macosx/python2.7:$PATH"
 export PATH="$HOME/.aws/cloud_formation/bin:$PATH"
-export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
-#export DYLD_FALLBACK_LIBRARY_PATH="/Applications/Postgres.app/Contents/MacOS/lib:/usr/lib:$DYLD_LIBRARY_PATH"
-
-# export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin"
 
 fpath=(~/.zsh/functions $fpath)
 

@@ -4,7 +4,7 @@
 [core]
 	editor = vim
 	autocrlf = false
-	excludesfile = ~/.gitignore
+	excludesfile = /opt/boxen/config/git/gitignore
 [alias]
   cp = cherry-pick
   st = status -s
