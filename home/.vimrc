@@ -1,51 +1,8 @@
+execute pathogen#infect()
+
 set nocompatible               " be iMproved
 filetype off                   " required!
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
-
-" My Bundles here:
-Bundle 'Align'
-Bundle 'Keithbsmiley/rspec.vim'
-Bundle 'L9'
-Bundle 'Shutnik/jshint2.vim'
-Bundle 'bufexplorer.zip'
-Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'dsawardekar/ember.vim'
-Bundle 'elzr/vim-json'
-Bundle 'godlygeek/tabular'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'kien/ctrlp.vim'
-Bundle 'mustache/vim-mode'
-Bundle 'othree/html5.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-haml'
-Bundle 'tpope/vim-rails'
-Bundle 'vim-ruby/vim-ruby'
-
 filetype plugin indent on     " required!
-"
-" Brief help
-"
-" :BundleInstall  - install bundles (won't update installed)
-" :BundleInstall! - update if installed
-"
-" :Bundles foo    - search for foo
-" :Bundles! foo   - refresh cached list and search for foo
-"
-" :BundleClean    - confirm removal of unused bundles
-" :BundleClean!   - remove without confirmation
-"
-" see :h vundle for more details
-" or wiki for FAQ
-" Note: comments after Bundle command are not allowed..
-
 
 " Solarized colors
 syntax enable
