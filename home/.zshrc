@@ -46,13 +46,7 @@ export EDITOR=vi
 compctl -f -k "( `cat ~/.ssh/config | grep "Host " | grep -vE "^#" | awk '{print $2}' | grep -v "*"` )" an
 
 alias gp="git pull origin $(current_branch)"
-alias www='cd ~/code/247/otb_www_app/www'
-alias admin='cd ~/code/247/otb_admin_app/admin'
-alias livebook='cd ~/code/247/otb_livebook_app/livebook'
-alias rules='cd ~/code/247/otb_business_rules_app/rules'
-alias aggregation='cd ~/code/247/otb_aggregation_app/aggregation'
 alias yes='echo yes'
-alias alllogs='tail -f log/development.log log/test.log /var/log/otbeach.log /var/log/apache2/access_log /var/log/apache2/error_log | egrep --color -E '\''Parameters:|GET|PUT|DELETE|200|error|ERROR|==>|<==|$'\'
 alias gd='git diff'
 alias gds='git diff --staged'
 alias ls='ls -laG'
@@ -60,7 +54,6 @@ alias find_rails='find . -path "./log" -prune -o -path "./coverage" -prune -o -p
 alias mi='grep -n ">>>>>>>\|<<<<<<<" `find_rails`'
 alias -s rb=vim
 alias -s log="less -MNf"
-alias phone_number='cd ~/code/247/otb_www_app/current; echo -n "price: ";read price; echo -n "pax: "; read pax; echo -e "yes\nno\nyes\ntrue\ntrue\n$price\ntrue\n$((pax - 1))\ntrue\ntrue" | bundle exec cap production config:generate:www:phone_number; bundle exec cap production unicorn:restart'
 alias m='mate .'
 jqit() { wget -O - "$*" | jq -C . | less -R }
 
