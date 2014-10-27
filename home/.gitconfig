@@ -1,10 +1,10 @@
 [user]
-	name = Simon Mellor
-	email = sfusion@gmail.com
+	name = Andy Whittle 
+	email = andywittle@gmail.com 
 [core]
 	editor = vim
 	autocrlf = false
-	excludesfile = /Users/simonmellor/.gitignore
+	excludesfile = /Users/andywhittle/.gitignore
 [alias]
   cp = cherry-pick
   st = status -s
@@ -14,6 +14,7 @@
   br = branch
   diff = diff --word-diff
   dc = diff --cached
+  ds = diff --staged
 
   dm = ! git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d
   sed = ! git grep -z --full-name -l '.' | xargs -0 sed -i -e
@@ -23,7 +24,7 @@
 [push]
 	default = tracking
 [github]
-	user = simonmellor
+	user = andywhittle
 [credential]
 	helper = /opt/boxen/bin/boxen-git-credential
 [hub]
